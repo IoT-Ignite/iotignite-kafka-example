@@ -9,7 +9,7 @@ In order to use this application you need to contact [IoT-Ignite Support](https:
 ```bash
 $ mvn clean install
 $ cd target
-$ java -Djava.security.auth.login.config=/home/baris/CONF/KEYTABS/birbencom_jaas.conf -Djava.security.krb5.conf=/etc/krb5.conf -jar iotignite-kafka-example-0.1.0.jar
+$ java -Djava.security.auth.login.config=/path/to/client_jaas.conf -Djava.security.krb5.conf=/path/to/krb5.conf -jar iotignite-kafka-example-0.1.0.jar
 ```
 
 After building and starting server go to your browser and open [http://localhost:8080] If any of your devices using [IoT Ignite Demo Application](https://github.com/IoT-Ignite/android-example-IoTIgniteDemoApp) Temperature and Humidity values will be appeared on webpage. Also all device messages will be streamed to web page console div.
